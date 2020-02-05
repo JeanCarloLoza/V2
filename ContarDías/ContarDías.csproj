@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\TFS\PDG\Alpha\Src\Terceros\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\IntervalosTiempo.cs" />
+    <Compile Include="Interfaces\IMostrarMensajes.cs" />
+    <Compile Include="Interfaces\IValidadorDatos.cs" />
+    <Compile Include="ProcesadorEventos.cs" />
+    <Compile Include="Interfaces\ILectorArchivo.cs" />
+    <Compile Include="MostrarMensajes.cs" />
+    <Compile Include="Interfaces\IProcesadorEventos.cs" />
+    <Compile Include="LectorArchivoTxt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidadorDatos.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
